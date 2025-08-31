@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--first page-->
+
+
+
+    
+        <div class="navbar" id="top">
+        <div class="logo"> <img src="image.jpg"></div>
+<div id="bar"><i class="fa-solid fa-bars"></i></div>
+        <ul class="list">
+          <li class="close-btn"><i class="fa-solid fa-xmark"></i></li> 
+            <li ><a href="#">Home </a></li>
+            <li> <a href="#About Us">About Us</a></li>
+            <li> <a href="#Our Services">Our Services</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#Why us">Why us</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+       
+        </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const navbar  = document.querySelector('.navbar');
+  const bar     = document.getElementById('bar');
+  const list    = document.querySelector('.list');
+  const closeBtn= document.querySelector('.close-btn i');
+
+  const openMenu  = () => { list.classList.add('show'); };
+  const closeMenu = () => {
+    list.classList.remove('show');
+    bar.style.removeProperty('display'); // let CSS media queries decide
+  };
+
+  bar.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  document.querySelectorAll('.list a').forEach(a => a.addEventListener('click', closeMenu));
+
+  // Keep state correct on resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1145) closeMenu();
+  });
+
+  // Scroll effect (single listener)
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+});
+</script>
+
+       
+  
+
+
+
+        <div class="back-grnd">
+     <h1>A Results Driven PR<br>Management Agency</h1>
+      <div class="animation">Getting Started Today</div>
+
+      <div class="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+</div>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  });
+</script>
+
+    <!--second page-->
+    
+    <div class="second-page" id="About Us">
+        <h2 >About Us </h2>
+        <div class="content-block">
+        <div class="para">
+            <p>Enriched Connections was founded with a passion for helping businesses like yours thrive and succeed by unlocking new opportunities for growth. Our primary focus lies in enhancing businesses by establishing fruitful connections with new vendors from diverse categories, thereby broadening their business boundaries and driving sustainable success.</p>
+  <br>
+  <br>
+  <p>We understand that building strong connections with reliable vendors is crucial to expanding your business reach and staying ahead of the competition. With over 3 decades of seasoned PR and Loyalty expertise, we are well-equipped to create strategic alliances and partnerships that will significantly impact your business development and revenue generation.</p>     
+<br>
+<br>
+<br>
+
+<p>Our key services include, but are not limited to:</p>
+<br>
+<br>
+<p><b>Vendor Sourcing:</b> We conduct thorough research and analysis to identify potential vendors that perfectly complement your business needs and objectives.
+
+</p>
+<br>
+<br>
+<p><b>Strategic Partnerships:</b> We facilitate fruitful partnerships that foster mutual growth, increased brand visibility and improved market presence.
+</p>
+<br>
+<br>
+<p><b>Networking Events: </b> organize exclusive networking events that provide you with the opportunity to meet and connect with industry-leading vendors and decision-makers.
+
+</p>
+<br>
+<br>
+<p>At Enriched Connections, we prioritize client satisfaction and tailor our services to meet your unique requirements. Our mission is to be your trusted partner in achieving business growth and success through strategic PR management.</p>
+        </div>
+        </div>
+    </div>
+
+    <!--third page-->
+    <div class="third-page">
+
+<div class="content-block">
+  <h3>Why Public Relations Management Matters</h3>
+<div class="para-one">
+    <p>Public Relations management is the art and science of cultivating and maintaining positive relationships between an organization and its various stakeholders. Whether you’re a business, a nonprofit, a government agency or an individual looking to enhance your personal brand, Public Relations plays a vital role in shaping public opinion, managing crises and building trust.</p>
+<br>
+<br>
+<p>With its user-centric design and emphasis on personal growth, Enriched Connections cultivates an inclusive and supportive community, where corporates and individuals can thrive and forge lasting connections that enrich their lives. Since 1989, we have been in the global market specialized in Business Development, Public Relations, Marketing, Sales and Consultancy. We have set the platform for Enriched Connections. In today’s interconnected world, building connections has become a crucial aspect of fostering links and nurturing relationships within the business landscape.</p>
+
+<br>
+<br>
+<p>With its user-centric design and emphasis on personal growth, Enriched Connections cultivates an inclusive and supportive community, where corporates and individuals can thrive and forge lasting connections that enrich their lives. Since 1989, we have been in the global market specialized in Business Development, Public Relations, Marketing, Sales and Consultancy. We have set the platform for Enriched Connections. In today’s interconnected world, building connections has become a crucial aspect of fostering links and nurturing relationships within the business landscape.</p>
+
+</div>
+<div class="photo"></div>
+
+<div class="box">
+    <div class="box-one">
+       <pre> <h3>What is Public <br>Relations (PR)?</h3></pre>
+       
+       <ul class="one">
+
+        <li>PR Strategies - Control - Information</li>
+<li>Goals - News - Good image</li>
+<li> Connections - Right time</li>
+<li>Building - Maintaining relationships</li>
+
+       </ul>
+    </div>
+    <div class="box-two">
+        <pre> <h3> Benefits of PR<br> Management Services</h3> </pre>
+
+        <ul class="two">
+
+            <li>Enhancing brand reputation and credibility.</li>
+<li>Increasing visibility and brand awareness.</li>
+<li>Managing and improving public perception.</li>
+<li>Building relationships with media and key stakeholders.</li>
+<li>Crisis preparedness and effective response.</li>
+
+        </ul>
+    </div>
+    </div>
+</div>
+    </div>
+
+    <!--fourth page-->
+    <div class="fourth-page">
+
+
+<h4 id="Our Services">Our Services</h4>
+<br>
+<br>
+<br>
+<a class="re-p">We deal with a wide range of businesses and operate as specialists in practically every niche, specialty, market, region and industry (on a worldwide scale).</a>
+
+<div class="container">
+    <div class="b-one">
+       <div class="horse"><i class="fa-solid fa-chess-knight"></i></div>
+        <h5>Business Enhancement</h5>
+        <div class="horse-p"><p>Crafting a strong public relations strategy is the first step towards achieving your goals. We provide expert guidance on connecting other potential business partners, identifying target audiences, setting measurable objectives, and developing comprehensive plans to effectively communicate your key messages.</p></div>
+    </div>
+
+    <div class="b-two">
+        <div class="radio">
+        <i class="fa-solid fa-radio"></i></div>
+        <h5>Media Relations</h5>
+        <div class="horse-p">The media landscape is ever-evolving, And knowing how to navigate it is crucial. We offer practical advice on establishing and nurturing relationships with journalists, creating compelling press releases, managing media interviews, and leveraging social media platforms to maximize your organization's visibility.</div>
+    </div>
+    <div class="b-three">
+        <div class="crisis"><i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h5>Crisis Management</h5>
+        <div class="horse-p">The process of effectively handling and mitigating an unexpected situation that poses a significant threat to an organization's reputation. It involves a structured approach to identifying, analyzing and responding to the crisis promptly, with the goal of minimizing negative impacts and restoring normalcy as quickly as possible.</div>
+        </div>
+    
+    <div class="b-four">
+        <div class="market"><i class="fa-solid fa-people-group"></i></div>
+        <h5>Marketing Management</h5>
+        <div class="horse-p">Services involve the strategic planning, execution and oversight of marketing activities to effectively promote a brand, product or service. These services help businesses reach their target audience, increase brand awareness and drive sustainable growth through data-driven campaigns and market analysis.</div>
+         </div>
+    <div class="b-five">
+        <div class="ruler">
+            <i class="fa-solid fa-pen-ruler"></i>
+        </div>
+        <h5>Project Management Services</h5>
+        <div class="horse-p">Provide structured planning, coordination and control of resources to achieve specific project goals within defined timelines and budgets. These services ensure efficient execution, risk mitigation and successful delivery of projects across various industries.</div>
+    </div>
+    <div class="b-six">
+        <div class="comments">
+            <i class="fa-solid fa-comments"></i>
+        </div>
+        <h5>Media Monitoring Services</h5>
+        <div class="horse-p">Refer to the professional tracking, collection, and analysis of information published or broadcast across various media platforms — including newspapers, magazines, TV, radio, websites, blogs, and social media — to keep clients informed about topics relevant to their interests.</div>
+    </div>
+    
+<div class="b-seven">
+    <div class="press">
+        <i class="fa-solid fa-newspaper"></i>
+    </div>
+    <h5>Press Releases</h5>
+    <div class="horse-p">Writing and distributing press releases to announce new products, events or important company news. Press releases are a vital tool for gaining media coverage. Press releases are formal written announcements issued by organizations to communicate news, events or important developments to the media and the public.</div>
+</div>
+<div class="b-eight">
+    <div class="Events">
+    <i class="fa-brands fa-connectdevelop"></i></div>
+    <h5>Events</h5>
+    <div class="horse-p">Event organizing management is a multifaceted process that involves conceptualizing the event, identifying objectives, securing venues, coordinating vendors, managing logistics and ensuring seamless operations. Effective event organizing management requires attention to detail, strong organizational skills, excellent communication and the ability to adapt to unexpected challenges. By overseeing every aspect of an event, from pre-planning to post-event evaluation, we shall ensure creating memorable and impactful experiences for attendees.</div>
+</div>
+<div class="b-nine">
+    <div class="headset">
+        <i class="fa-solid fa-headphones"></i>
+    </div>
+    <h5>CSR Initiatives Preparation</h5>
+    <div class="horse-p">Refers to the structured planning and development of meaningful social, environmental, and ethical programs by a company. These initiatives aim to create a positive impact on society while aligning with the company’s values and long-term goals.</div>
+</div>
+</div>
+    </div>
+
+    <!--fifth page-->
+
+        <div class="fifthpage" id="Testimonials">
+  <div class="add-pic"></div>
+  
+  <div class="info">
+    <p id="para">What Clients Say.</p>
+
+    
+    <div class="slider">
+      <div class="slide-track">
+        
+        <div class="testimonial">
+          <p ><b>Mr. Rajeev.MP</b><br> Managing Director, Book O Trip</p>
+          <div class="color">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>We are satisfied with the service provided by Enriched Connection.</p>
+          <p>We got what we were looking for.</p>
+        </div>
+
+        <div class="testimonial">
+          <p ><b>Samkutty Mathew</b><br> Chairman, Union Church, Sharjah</p>
+          <div class="color">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Dear Mr. John, thank you for your great support in making our 25th year celebrations.</p>
+          <p>We got what we were looking for.</p>
+        </div>
+
+        <div class="testimonial">
+          <p ><b>Ramesh Babu</b><br> Chairman, Times Tourism, Dubai</p>
+          <div class="color">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>We are happy Enriched Connections connected us to many goal-oriented associations.</p>
+        </div>
+
+
+        <div class="nav-arrows" aria-label="Testimonials navigation">
+    <button type="button" class="nav prev" aria-label="Previous">&#x2039;</button>
+    <button type="button" class="nav next" aria-label="Next">&#x203A;</button>
+  </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.slider').forEach(function (slider) {
+    const track  = slider.querySelector('.slide-track');
+    const slides = slider.querySelectorAll('.testimonial');
+    let arrows   = slider.querySelector('.nav-arrows');
+
+    if (!track || !slides.length) return;
+
+    // if arrows were placed inside the track by mistake, move them out
+    if (track.contains(arrows)) slider.appendChild(arrows);
+
+    const prev = arrows.querySelector('.prev');
+    const next = arrows.querySelector('.next');
+
+    // stop any CSS keyframe animation from fighting JS
+    track.style.animation = 'none';
+    track.style.webkitAnimation = 'none';
+
+    let index = 0, total = slides.length;
+
+    function go(i){
+      index = (i + total) % total;               // wrap around both ways
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    prev.addEventListener('click', () => { go(index - 1); restart(); });
+    next.addEventListener('click', () => { go(index + 1); restart(); });
+
+    // autoplay
+    const INTERVAL = 5000;
+    let timer = setInterval(() => go(index + 1), INTERVAL);
+    function pause(){ clearInterval(timer); timer = null; }
+    function play(){ if (!timer) timer = setInterval(() => go(index + 1), INTERVAL); }
+    function restart(){ pause(); play(); }
+
+    slider.addEventListener('mouseenter', pause);
+    slider.addEventListener('mouseleave', play);
+
+    // optional swipe
+    let startX = null;
+    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; pause(); }, {passive:true});
+    track.addEventListener('touchend', e => {
+      if (startX !== null) {
+        const dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
+        startX = null;
+      }
+      setTimeout(play, 200);
+    }, {passive:true});
+
+    go(0);
+  });
+});
+</script>
+
+    
+
+
+
+            
+
+    
+           
+          
+    
+    <!-- Sixth Page -->
+<div class="sixthpage" id="Why us">
+  <p id="para-one">Why Choose Enriched Connections?</p>
+  
+  <p>
+    Enriched Connections is your trusted partner in navigating the intricate world of public relations management. Our team of experienced professionals brings together a wealth of knowledge and practical expertise, offering you actionable insights and best practices to help you succeed. Through our articles, case studies, interviews, and resources, we aim to empower you to build meaningful connections, enhance your reputation, and achieve your communication goals.
+  </p>
+
+  <p>
+    Enriched Connections is your go-to resource for all things public relations management.
+  </p>
+
+  <p>
+    Start your journey towards effective communication and strong relationships today!
+  </p>
+</div>
+
+    <!--seventh page-->
+    <!-- Seventh Page (Contact Section) -->
+<div class="seventhpage" id="Contact">
+  <div class="lastpage">
+    <p id="last-h">Let's Talk</p>
+   <p id="last-he"> <a href="mailto:neethuvs90@gmail.com">john@enriched-connections.com</a></p>
+    <p id="last-hea">
+      Enriched Connections represents a groundbreaking platform that is transforming the process of connecting and engaging with others. Utilizing the latest inventive functionalities, this platform effortlessly closes the divide between businesses and individuals, allowing them to forge profound relationships and discover fresh possibilities.
+    </p>
+    <div class="last-icon">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-solid fa-basketball"></i></a>
+    </div>
+  </div>
+
+  <div class="details">
+    <form id="contact-form">
+      
+      <input class="input-field" type="text" placeholder="Your Name" required>
+      <input class="input-field" type="email" placeholder="Your Email" required>
+      <input class="input-field" type="tel" placeholder="Your Mobile Number" required>
+      <input class="input-field" type="text" placeholder="Your Subject">
+      <textarea id="message" name="message" placeholder="Your Message" rows="6"></textarea>
+      <button type="submit" id="send">Send</button>
+    </form>
+</div>
+</div>
+
+
+
+<footer>
+  <p>© 2025 Enriched Connections. All rights reserved. Developed by websitesaga.com</p>
+  <div class="top"><a href="#" id="top">Back to top</a></div>
+  <script>
+    
+    
+  const year = new Date().getFullYear();
+  document.querySelector('footer p').textContent =
+    `© ${year} Enriched Connections. All rights reserved. Developed by websitesaga.com`;
+
+
+  </script>
+</footer>
+
+<script src="first.js"></script>
+
+</body>
+</html>
+</body>
+</html>

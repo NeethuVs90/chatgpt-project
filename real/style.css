@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#bar {
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+  position: absolute;
+}
+
+.back-grnd {
+  background-color: black;
+  width: 100%;
+  background-image: url("photo(2).jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 20px ;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+.navbar.scrolled {
+  background:rgba(0, 0, 0, 0.90);
+}
+.logo {
+  margin-left: 70px; /* or padding-left: 20px; */
+}
+.icon {
+  margin-right: 70px;
+  display: flex;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1rem;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgb(77, 142, 120); /* or any color you want on hover */
+  font-size: 1.1rem; /* Adjust as needed */
+}
+
+
+.icon {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.icon i:hover {
+  color: rgb(77, 142, 120);
+}
+
+/* Hero Section */
+h1 {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  text-align: center;
+  margin-top: 250px;
+  color: white;
+  line-height: 1.3;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.animation {
+  display: block;
+  width: max-content;
+  margin: 50px auto 0;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: rgb(77, 142, 120);
+  color: white;
+  border-radius: 6px;
+  position: static;
+  text-align: center;
+  transform: none;
+  left: auto;
+  transition: ease-out 0.3S;
+}
+.animation:hover {
+  color:rgb(77, 142, 120);
+  box-shadow: inset 400px 0 0 0 white;
+}
+
+/* WhatsApp floating button */
+.whatsapp {
+  color: rgb(19, 208, 25);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bolder;
+  font-size: 3rem;
+  cursor: pointer;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.whatsapp:hover {
+  color: rgb(77, 142, 120);
+}
+
+.close-btn {
+  width: 100%;
+  text-align: right;
+  padding: 15px 25px;
+  display: block;
+}
+
+.close-btn i {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  
+}
+
+
+
+        
+   
+    
+
+.second-page {
+  width: 100%;
+  max-width: 1470px;
+  margin: auto;
+  padding: 40px 0; /* space inside */
+  box-sizing: border-box;
+}
+
+.second-page h2 {
+  color: rgb(77, 142, 120);
+  font-size: 2.5rem;
+  text-align: center; /* centers heading automatically */
+  letter-spacing: 2px;
+  margin-top: 63px;
+  margin-bottom: 40px;
+}
+
+.para {
+  width: 100%;   /* flexible width */
+ margin-bottom: 30px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+.second-page .content-block {
+  max-width: 1280px;   /* ✅ same width across all pages */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Paragraph */
+
+
+
+
+
+.third-page {
+  width: 100%;
+  max-width: 1470px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+/* Headings */
+.third-page > .content-block > h3 {
+  color: rgb(77, 142, 120);
+  margin:0 0 24px 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  line-height: 60px;
+  padding-left: 0;
+  text-indent: 0;
+  padding-bottom: 50px;
+  
+  text-align: left;
+  
+}
+
+
+
+
+
+
+
+
+/* Paragraph section */
+.para-one {
+  width: 100%;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  
+}
+
+.content-block {
+  max-width: 1280px;   /* both will align with this width */
+  margin: 0 auto;      /* center it */
+  padding: 0 20px;     /* small side padding */
+  box-sizing: border-box;
+}
+
+
+/* Image */
+.photo {
+  width: 100%;
+  
+  aspect-ratio: 16/10;
+
+
+
+
+
+  
+  background-image: url(Web.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+/* Box container */
+.box {
+  max-width: 1120px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  
+  
+
+}
+
+/* Each box */
+.box-one,
+.box-two {
+  flex: 1 1 calc(50% - 40px); /* 2 per row on desktop */
+  min-width: px;
+  background:none;
+  padding: 20px;
+  border-radius: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+  
+  
+/* Headings inside boxes */
+.box-one h3,
+.box-two h3 {
+  color: rgb(77, 142, 120);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  
+}
+
+
+/* Lists */
+.one,
+.two {
+  margin: 0;
+
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+
+ .fourth-page {
+    background-color: rgb(77, 142, 120);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 20px;
+  max-width: 1470px;
+
+  
+  }
+    
+   
+    
+    
+ h4 {
+    display: flex; 
+
+    align-items: center;
+    justify-content: center;
+    padding-top: 7%;
+    text-align: center;
+    font-size: 2.5rem;
+    color:white;
+  
+ }
+.fourth-page .re-p{
+  margin: 20px auto;
+  max-width: 900px;
+  color: white;
+  text-align: center;
+  display: block;
+  line-height: 1.6;
+  
+ }
+ .container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   align-items: stretch;
+   padding: 0 40px;
+ }
+ /* Service Cards */
+.container > div {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  flex: 0 0 calc(33.333% - 20px); /* exactly 3 per raws*/
+  max-width: calc(33.333% - 20px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+ .container > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.container i {
+  padding-left: 10%;
+  padding-top: 20%;
+  font-size: 4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  padding: 10% 10% 0;
+}
+  
+ .horse-p {
+  text-align: justify;
+  padding: 5% 10% 10%;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  color: rgb(152, 146, 146);
+  font-size: 1rem;
+}
+
+ .fifthpage {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1470px;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px 5%;
+  gap: 30px;
+  height: auto;
+  min-height: 900px;
+}
+
+.add-pic {
+  flex: 1 1 400px;
+  height: auto;
+  min-height: 300px;
+  background: url('free.jpeg') center/cover no-repeat;
+  border-radius: 10px;
+}
+
+.info {
+  flex: 1 1 500px;
+  overflow:hidden;
+  font-size: 1.1rem;
+  background-color: white;
+  font-weight: 50;
+
+}
+
+#para {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 60px 0;
+  text-align: center;
+color: rgb(77, 142, 120);
+}
+
+/* SLIDER */
+.slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding-bottom: 26px;
+}
+
+.slide-track {
+  display: flex;
+  animation: none;
+  transition: transform 350ms ease-in-out;
+  will-change: transform;
+}
+/* bottom-center arrow group */
+.nav-arrows {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px; /* small gap */
+  z-index: 10;
+  pointer-events: auto;
+}
+
+/* tiny, black, no background buttons */
+.nav-arrows .nav {
+  all: unset;                 /* remove default button styles */
+  cursor: pointer;
+  color: #000;                /* black */
+  font-size: 14px;            /* very small */
+  line-height: 1;
+  padding: 4px;  
+  background: transparent;  
+  border: 0;           /* small hit area without visible bg */
+}
+
+/* optional: subtle interaction */
+.nav-arrows .nav:hover { transform: scale(1.08); }
+.nav-arrows .nav:active { transform: scale(0.96); }
+.nav-arrows .nav:focus-visible { outline: 1px dotted #000; } /* accessible focus */
+
+
+.info p:first-of-type {
+  font-weight: 400;
+}
+
+
+.testimonial {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background:white;
+  margin: 0 ;
+  padding-bottom: 56px;
+}
+
+.color {
+  color: #f9c803;
+  margin: 10px 0;
+}
+/* KEYFRAMES for horizontal movement */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+ 
+
+.sixthpage {
+  width: 100%;
+  max-width: 1470px;
+  margin: auto;
+  padding: 60px 10%;
+  background-color: rgb(77, 142, 120);
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+#para-one {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 32px;
+}
+
+.sixthpage p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+
+
+.seventhpage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 60px 10%;
+  background-color: black;
+  color: white;
+  max-width: 1470px;
+  margin: auto;
+}
+
+.lastpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+#last-h {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.lastpage #last-he a {
+  color: rgb(77, 142, 120);
+  font-weight: bold;
+  
+}
+
+#last-hea {
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  color: rgb(152, 146, 146);
+  padding-top: 20px;
+}
+.last-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* spacing between icons */
+  margin-top: 25px;
+}
+
+
+.last-icon i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(77, 142, 120);
+  font-size: 17px;
+  cursor: pointer;
+  color: var(--bg-color);
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.last-icon i:hover {
+  transform: scale(1.1);
+  background: white;
+  color: black;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-field,
+#message {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  max-width: 230px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(77, 142, 120) ;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: rgb(162, 158, 158);
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+
+.top {
+  margin-top: 15px;
+}
+
+.top a {
+  color: rgb(77, 142, 120) ;
+  text-decoration: none;
+}
+
+
+  
+
+  
+
+  
+
+ 

@@ -1,0 +1,418 @@
+/* ✅ Responsive Layout for Tablets & Mobiles */
+@media (max-width: 1024px) {
+  .seventhpage {
+    grid-template-columns: 1fr;
+    padding: 40px 8%;
+  }
+
+  .lastpage, .details {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .lastpage {
+    margin-bottom: 40px;
+  }
+
+  .input-field, #message {
+    max-width: 100%;
+  }
+
+  button {
+    max-width: 100%;
+  }
+
+  .top {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  #para-one {
+    font-size: 2rem;
+  }
+  .sixthpage p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sixthpage {
+    padding: 40px 5%;
+  }
+  #para-one {
+    font-size: 2rem;
+  }
+  .sixthpage p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #para-one {
+    font-size: 1.6rem;
+  }
+  .sixthpage p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 1030px){
+  .add-pic{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-left: 0;
+    aspect-ratio: 4/3;
+  }
+}
+  
+
+ 
+
+    @media (max-width: 768px) {
+  .fifthpage {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .add-pic {
+    width: 100%;
+    max-width: 400px;
+    height: auto;              /* ✅ No fixed height */
+    margin-left: 0;
+    aspect-ratio: 4 / 3;       /* Keeps proportion instead of big gap */
+  }
+
+  .info {
+    width: 100%;
+    height: auto;              /* ✅ No fixed height */
+    overflow: visible;
+    margin-top: 20px;
+  }
+
+  .m-one {
+    width: 100%;
+    height: auto;              /* ✅ No fixed height */
+    padding-top: 0;            /* ✅ Removes large gap */
+  }
+}
+@media (max-width: 1024px) {
+  .fifthpage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-pic {
+    width: 100%;
+  
+    height: 250px;
+  }
+}
+  @media  (max-width:1130px){
+    .fifthpage {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .add-pic {
+    
+    width: 100%;
+    max-width: 600px;
+    height: auto;  
+    min-height:700px ;            /* ✅ No fixed height */
+    margin-left: 0;
+    aspect-ratio: 4 / 3;       /* Keeps proportion instead of big gap */
+  }
+  }
+    @media (max-width: 1906px) {
+  .fifthpage {
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    justify-content: center; /* Centers horizontally if needed */
+  }
+
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically inside info */
+    align-items: center;
+    text-align: center;
+  }
+
+  #para {
+    padding-top: 0; /* Remove big top gap */
+    margin-top: 0;  /* Extra safety */
+  }
+  .add-pic {
+    flex: 1;
+    height: 100%;  /* Make it fill parent height */
+    min-height: 600px; /* Safety so it doesn’t collapse on small content */
+    background: url('free.jpeg') center/cover no-repeat;
+    border-radius: 10px;
+  }
+}
+
+/* Tablet: 2 boxes per row */
+@media (max-width: 1024px) {
+  .container > div {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* Mobile: 1 box per row */
+@media (max-width: 768px) {
+  .container > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* ≥1190px: align the .box container to the left and keep items left-aligned */
+@media (min-width: 1190px) {
+  .box {
+    margin: 50px 0 0 0;        /* was 50px auto 0 auto; -> left align the container */
+    justify-content: flex-start;/* children start from the left, no stretch */
+    gap: 20px;                  /* keep a small gap between .box-one and .box-two */
+  }
+
+  /* remove the extra right padding that pushes things inward */
+  .box-two { 
+    padding-right: 0;
+  }
+}
+
+  
+@media (min-width: 768px) and (max-width: 962px) {
+  .box-two h3 {
+    white-space: normal;   /* allow wrapping */
+    width: 100%;           /* or a smaller % if needed */
+    font-size: 2.3rem;     /* adjust to fit 3 lines */
+    line-height: 1.2em;    /* optional for spacing */
+  }
+  .box {
+    gap:20px;
+  }
+  .box-one
+  {
+    flex: 1 1 45%;       /* increase base width */
+    max-width: 45%;      /* prevent shrinking beyond this width */
+      
+  }
+.box-two{
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .third-page > .content-block > h3 {
+    font-size: 2rem;
+    
+  }
+
+  .photo {
+    aspect-ratio: 1 / 1;
+    
+    
+  }
+  .box{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .para-one {
+    font-size: 0.95rem;
+  }
+
+.box-one,
+  .box-two {
+    flex: 1 1 100%;
+    max-width: 100%;}}
+    /*flex-direction: column; /* Stack heading over list on mobile 
+    align-items: flex-start;
+  }
+} */
+ /* Tablet + Desktop (≥769px): always horizontal */
+@media (min-width: 769px) {
+  .box {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .box-two{
+    padding-right: 17%;
+  }
+
+  .box-one,
+  .box-two {
+    flex: 1 1 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+  /* Make text slightly smaller on mobile for readability */
+@media (max-width: 768px) {
+  .second-page h2 {
+    font-size: 2rem;
+  }
+  .para {
+    max-width: 100%;
+    font-size: 0.95rem;
+  
+  }
+}
+@media (min-width: 769px) and (max-width: 1219px){
+#bar {
+  display: none;
+}
+}
+
+/* Tablet tweaks */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .para {
+    max-width: 95%;
+    font-size: 1rem;
+  }
+}
+  /* Hide menu on small screens */
+@media (max-width: 1145px) {
+    .list {
+        
+        flex-direction: column;
+        position: fixed;
+        top: 0; /* below navbar */
+        right: 0;
+        background: black;
+        width: 100%;
+        
+        gap: 2rem;
+        z-index: 999;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  visibility: hidden;
+    }
+    .navbar {
+      background-color: black;
+      position: relative;
+    }
+    .list li a:hover {
+      color: rgb(77, 142, 120); ;
+    }
+
+
+    .list.show {
+        transform: translateX(0%);
+        visibility: visible;
+    }
+    .icon {
+      display: none;
+    }
+
+    #bar {
+      position: absolute;
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 35px;
+        
+        right: 20px;
+        top: 32px;
+        z-index: 1001;
+    }
+    h1 {
+      margin-top: 300px;
+    }
+
+  .list li a {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    padding: 10px 0;
+  }
+  .close-btn {
+    width: 100%;
+    text-align: right;
+    padding: 20px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .close-btn i {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    
+  }
+}
+@media (min-width: 1146px) {
+  .close-btn {
+    display: none;
+  }
+  .logo {
+    margin-left: 10px;}
+    #bar { display: none !important; }
+  }
+ @media (min-width: 769px) and (max-width: 1024px) {
+  .back-grnd{
+    min-height:60vh ;
+
+  }
+  h1 {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+ }  
+ @media(max-width:769px){
+  .back-grnd {
+    min-height: 80vh;
+  }
+  h1 {
+    margin-top: 230px;
+    text-align: center;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+ }
+  
+
+
+
+  
+
+  
+  
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+
+
+
+  
+      
+  
