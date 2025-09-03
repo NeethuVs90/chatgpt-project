@@ -89,7 +89,7 @@ a {
 
 a:hover {
   color: rgb(77, 142, 120); /* or any color you want on hover */
-  font-size: 1.1rem; /* Adjust as needed */
+  font-size: 1rem; /* Adjust as needed */
 }
 
 
@@ -580,6 +580,9 @@ color: rgb(77, 142, 120);
   color: rgb(77, 142, 120);
   font-weight: bold;
   
+}
+.lastpage #last-he a:hover{
+  color: white;
 }
 
 #last-hea {
